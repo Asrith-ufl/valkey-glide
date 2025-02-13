@@ -8,14 +8,53 @@ Valkey General Language Independent Driver for the Enterprise (GLIDE), is an ope
 
 Refer to the [Supported Engine Versions table](https://github.com/valkey-io/valkey-glide/blob/main/README.md#supported-engine-versions) for details.
 
-## Current Status
-
 # Getting Started - GO Wrapper
+
+## System Requirements
+
+The release of Valkey GLIDE was tested on the following platforms:
+
+Linux:
+
+- Ubuntu 24.04.1 (x86_64 and aarch64)
+
+macOS:
+
+- macOS 14.7 (Apple silicon/aarch_64)
 
 ## GO supported version
 
+Valkey GLIDE Go Wrapper support Go 1.20 and 1.22.
+
+## Installation and Setup
+
+Use either the `go get` command or edit `go.mod` file manually to install and use Valkey GLIDE in your Go project.
+
+### `go get` command
+
+Execute below command to install:
+
+```bash
+$ go get github.com/valkey-io/valkey-glide/go
+```
+
+### Edit `go.mod` manually
+1. Add below to your `go.mod` file and save:
+
+    ```
+    require (
+        github.com/valkey-io/valkey-glide/go v1.3.0
+    )
+    ```
+
+2. Execute below command:
+    ```bash
+    $ go mod tidy
+    ```
+
+
 ## Basic Example
 
-### Building & Testing
+## Building & Testing
 
 Development instructions for local building & testing the package are in the [DEVELOPER.md](DEVELOPER.md) file.
